@@ -6,7 +6,7 @@ import org.usfirst.frc.team2976.robot.Robot;
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
- *
+ *@author NeilHazra
  */
 public class DriveWithJoystick extends Command {
 	double threshold = 0.05;
@@ -19,7 +19,6 @@ public class DriveWithJoystick extends Command {
     // Called just before this Command runs the first time
     protected void initialize() {
     }
-    
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
     	double x = Robot.oi.driveStick.getRawAxis(OI.Axis.RX.getAxisNumber());

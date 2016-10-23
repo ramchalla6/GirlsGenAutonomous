@@ -5,7 +5,7 @@ import org.usfirst.frc.team2976.robot.Robot;
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
- *
+ *@author NeilHazra
  */
 public class TimedDrive extends Command {
 	long initialTime;
@@ -24,8 +24,8 @@ public class TimedDrive extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Robot.driveTrain.drive(power, power);
-       	//Robot.driveTrain.driveStraight(Robot.driveTrain.getGyro(), power);
+    	Robot.driveTrain.drive(power, power); //regular drive
+       	//Robot.driveTrain.driveStraight(Robot.driveTrain.getGyro(), power); //PID drive straight
     }
 
     // Make this return true when this Command no longer needs to run execute()
@@ -34,7 +34,7 @@ public class TimedDrive extends Command {
     }
     // Called once after isFinished returns true
     protected void end() {
-    	Robot.driveTrain.drive(0, 0);
+    	Robot.driveTrain.drive(0,0);
     }
     // Called when another command which requires one or more of the same
     // subsystems is scheduled to run

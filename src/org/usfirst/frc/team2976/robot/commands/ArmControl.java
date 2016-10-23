@@ -4,7 +4,7 @@ import org.usfirst.frc.team2976.robot.Robot;
 import edu.wpi.first.wpilibj.command.Command;
 import util.PIDMain;
 /**
- *
+ *@author NeilHazra
  */
 public class ArmControl extends Command {
 	double ArmDownValue = -550;

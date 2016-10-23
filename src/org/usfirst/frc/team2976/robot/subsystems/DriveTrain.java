@@ -14,7 +14,7 @@ import edu.wpi.first.wpilibj.AnalogGyro;
 import edu.wpi.first.wpilibj.CANTalon;
 import edu.wpi.first.wpilibj.Encoder;
 /**
- *
+ *@author NeilHazra
  */
 public class DriveTrain extends Subsystem {
     private SpeedController rightFrontMotor, leftFrontMotor;
@@ -27,7 +27,7 @@ public class DriveTrain extends Subsystem {
     public RobotDrive m_drive;
     
 	public DriveTrain()	{
-		double gyro_kp = 0;
+		double gyro_kp = 0; //TODO: tune PID controllers
 		double gyro_ki = 0;
 		double gyro_kd = 0;
 		

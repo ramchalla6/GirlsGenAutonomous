@@ -15,7 +15,7 @@ import util.PIDMain;
 import util.PIDSource;
 
 /**
- *
+ *@author NeilHazra
  */
 public class Arm extends Subsystem {
 	private CANTalon rightArm;
